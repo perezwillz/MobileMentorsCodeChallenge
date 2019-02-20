@@ -29,7 +29,11 @@ class NetworkManager {
         
         URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
             
-            let json = try! JSON(data: data!)
+            guard let data = data else {
+                print("There is something wrong when tring to get data from this url")
+                return
+            }
+            let json = try! JSON(data: data)
             
             completion(json)
             

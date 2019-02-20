@@ -86,7 +86,14 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
     //FIX BUG
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        NetworkManager().searchByTerm(urlString: "https://itunes.apple.com/search?term=a") { (json) in
+        guard let albumName = SearchResults.searchAllResults[indexPath.row].collectionName else {
+            print("This album does not have an album name")
+            return
+        }
+       
+        print("THIS IS THE ALBUM NAME \(albumName)")
+        
+        NetworkManager().searchByTerm(urlString: "https://itunes.apple.com/search?term=\(String(describing: albumName))") { (json) in
             self.parseJSON(json: json)
         }
     }

@@ -19,7 +19,7 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
+        setupTableView()
         
     }
     
@@ -35,12 +35,15 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         view.addSubview(albumTableView)
         
         setConstraints()
+        title = SearchResults.searchAlbumResults[0].collectionName
     }
     
     fileprivate func setupTableView() {
         albumTableView.delegate = self
         albumTableView.dataSource = self
         albumTableView.rowHeight = 150
+       albumTableView.register(ResultsTableViewCell.self, forCellReuseIdentifier: "resultsTableViewCell")
+        setupView()
     }
     
     fileprivate func setConstraints() {
@@ -62,11 +65,15 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.albumLabel.font = UIFont(name: Fonts.DemiBold.name(), size: 15)
         
         NetworkManager().getImage(urlString: SearchResults.searchAlbumResults[indexPath.row].artworkUrl100!) { (image) in
-            cell.albumImageView.image = image
+            
+            DispatchQueue.main.async {
+                 cell.albumImageView.image = image
+            }
+           
         }
-        cell.trackLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row + 1].trackName!)"
-        cell.albumLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row + 1].collectionName!)"
-        cell.artistLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row + 1].artistName!)"
+        cell.trackLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row].trackName!)"
+        cell.albumLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row].collectionName!)"
+        cell.artistLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row].artistName!)"
         
         return cell
     }
