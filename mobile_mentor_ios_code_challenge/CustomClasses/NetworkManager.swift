@@ -29,11 +29,9 @@ class NetworkManager {
         
         URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
             
-            
             let json = try! JSON(data: data!)
             
             completion(json)
-            
             
         }).resume()
         

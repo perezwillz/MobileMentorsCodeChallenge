@@ -29,7 +29,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         searchHistoryTableView.delegate = self
         searchHistoryTableView.dataSource = self
         searchHistoryTableView.rowHeight = 50
-        searchHistoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: "searchHistoryTableViewCell")
         searchHistoryTableView.backgroundColor = .black
         searchHistoryTableView.register(SearchTableViewCell.self, forCellReuseIdentifier: "searchCell")
     }

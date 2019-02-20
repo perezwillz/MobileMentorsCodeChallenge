@@ -47,6 +47,9 @@ class ResultsTableViewCell: UITableViewCell {
         backgroundColor = ColorPalette.DarkGray.setHexColor(alpha: 1)
         
         addSubview(albumImageView)
+        addSubview(trackLabel)
+        addSubview(artistLabel)
+        addSubview(albumLabel)
         setConstraints()
         
     }

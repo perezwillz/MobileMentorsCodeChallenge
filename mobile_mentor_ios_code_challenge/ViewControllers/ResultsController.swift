@@ -19,7 +19,7 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+   
         setupTableView()
         
     }
@@ -32,7 +32,9 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         resultsTableView.register(ResultsTableViewCell.self, forCellReuseIdentifier: "resultsTableViewCell")
         resultsTableView.backgroundColor = ColorPalette.DarkGray.setHexColor(alpha: 1)
-        
+        resultsTableView.delegate = self
+        resultsTableView.dataSource = self
+        resultsTableView.rowHeight = 150
         setupView()
         
     }
@@ -68,7 +70,10 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.artistLabel.font = UIFont(name: Fonts.DemiBold.name(), size: 15)
         
         NetworkManager().getImage(urlString: SearchResults.searchAllResults[indexPath.row].artworkUrl100!) { (image) in
-            cell.albumImageView.image = image
+            DispatchQueue.main.async {
+                 cell.albumImageView.image = image
+            }
+           
         }
         
         cell.trackLabel.text = "\(SearchResults.searchAllResults[indexPath.row].trackName!)"
@@ -90,13 +95,18 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         JSONParser().parseJSON(searchType: SearchType.searchAlbum.rawValue, json: json) { (boolValue) in
             switch boolValue {
             case true:
+                DispatchQueue.main.async {
+                    self.presentAlbumViewController()
+                }
                 
-                self.presentAlbumViewController()
             case false:
-                let title = "Unknown Error"
-                let message = "There was an error processing your request. Please try again."
-                let alertController = CreateAlertController().withCancelAction(title: title, message: message)
-                self.present(alertController, animated: true, completion: nil)
+                DispatchQueue.main.async {
+                    let title = "Unknown Error"
+                    let message = "There was an error processing your request. Please try again."
+                    let alertController = CreateAlertController().withCancelAction(title: title, message: message)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+       
             }
         }
     }
