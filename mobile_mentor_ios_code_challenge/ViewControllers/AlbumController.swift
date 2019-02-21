@@ -37,7 +37,8 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         view.addSubview(albumTableView)
         view.addSubview(albumView)
-        albumView.albumNameLabel.lineBreakMode = .byClipping
+        albumView.albumNameLabel.numberOfLines = 3
+        albumView.artistLabel.numberOfLines = 3
         setConstraints()
        
         title = SearchResults.searchAlbumResults[0].collectionName
@@ -56,7 +57,11 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
                         DispatchQueue.main.async {
                             self.albumView.albumImageView.image = image
-                            self.albumView.albumNameLabel.text = SearchResults.searchAlbumResults[0].collectionName
+                            
+                            guard let albumName = SearchResults.searchAlbumResults[0].collectionName else {return
+                                
+                            }
+                            self.albumView.albumNameLabel.text = albumName
                             self.albumView.artistLabel.text = SearchResults.searchAlbumResults[0].artistName
                             
                         }
