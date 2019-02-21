@@ -39,7 +39,30 @@
 		7EB7B8FE221A093600A0AFE1 /* Enumurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB7B8FD221A093600A0AFE1 /* Enumurations.swift */; };
 		7EB7B900221A2B9500A0AFE1 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB7B8FF221A2B9500A0AFE1 /* SearchTableViewCell.swift */; };
 		B9900FCC221E6A1200767360 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FCB221E6A1200767360 /* AlbumView.swift */; };
+		B9900FD4221EA27000767360 /* mobile_mentor_ios_code_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FD3221EA27000767360 /* mobile_mentor_ios_code_challengeTests.swift */; };
+		B9900FE2221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FE1221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.swift */; };
+		B9900FEA221EB40700767360 /* XCTestCase+Expect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FE9221EB40700767360 /* XCTestCase+Expect.swift */; };
+		B9900FEC221EB49300767360 /* TestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FEB221EB49300767360 /* TestPage.swift */; };
+		B9900FF1221EB5E400767360 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FF0221EB5E400767360 /* SearchController.swift */; };
+		B9900FF5221EB61A00767360 /* AlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FF4221EB61A00767360 /* AlbumController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9900FD6221EA27000767360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362E80C0221386EE00EEED0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 362E80C7221386EE00EEED0D;
+			remoteInfo = mobile_mentor_ios_code_challenge;
+		};
+		B9900FE4221EB3AC00767360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362E80C0221386EE00EEED0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 362E80C7221386EE00EEED0D;
+			remoteInfo = mobile_mentor_ios_code_challenge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		362E80C8221386EE00EEED0D /* mobile_mentor_ios_code_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobile_mentor_ios_code_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +99,16 @@
 		7EB7B8FF221A2B9500A0AFE1 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		82276A9ED03023C60BA659B6 /* Pods_mobile_mentor_ios_code_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_mentor_ios_code_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9900FCB221E6A1200767360 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		B9900FD1221EA26F00767360 /* mobile_mentor_ios_code_challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobile_mentor_ios_code_challengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9900FD3221EA27000767360 /* mobile_mentor_ios_code_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_mentor_ios_code_challengeTests.swift; sourceTree = "<group>"; };
+		B9900FD5221EA27000767360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9900FDF221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobile_mentor_ios_code_challengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9900FE1221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_mentor_ios_code_challengeUITests.swift; sourceTree = "<group>"; };
+		B9900FE3221EB3AC00767360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9900FE9221EB40700767360 /* XCTestCase+Expect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Expect.swift"; sourceTree = "<group>"; };
+		B9900FEB221EB49300767360 /* TestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage.swift; sourceTree = "<group>"; };
+		B9900FF0221EB5E400767360 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		B9900FF4221EB61A00767360 /* AlbumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumController.swift; sourceTree = "<group>"; };
 		C22030297DB94B07604D2E34 /* Pods-mobile_mentor_ios_code_challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile_mentor_ios_code_challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile_mentor_ios_code_challenge/Pods-mobile_mentor_ios_code_challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F5C57F35E623F66622826977 /* Pods-mobile_mentor_ios_code_challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile_mentor_ios_code_challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile_mentor_ios_code_challenge/Pods-mobile_mentor_ios_code_challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +122,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9900FCE221EA26F00767360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9900FDC221EB3AC00767360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				362E80CA221386EE00EEED0D /* mobile_mentor_ios_code_challenge */,
+				B9900FD2221EA27000767360 /* mobile_mentor_ios_code_challengeTests */,
+				B9900FE0221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests */,
 				362E80C9221386EE00EEED0D /* Products */,
 				6AD72DD4BE47612FC15D8064 /* Pods */,
 				8C855F0EDF6697B0F8B83144 /* Frameworks */,
@@ -106,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				362E80C8221386EE00EEED0D /* mobile_mentor_ios_code_challenge.app */,
+				B9900FD1221EA26F00767360 /* mobile_mentor_ios_code_challengeTests.xctest */,
+				B9900FDF221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,6 +289,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B9900FD2221EA27000767360 /* mobile_mentor_ios_code_challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9900FD3221EA27000767360 /* mobile_mentor_ios_code_challengeTests.swift */,
+				B9900FD5221EA27000767360 /* Info.plist */,
+			);
+			path = mobile_mentor_ios_code_challengeTests;
+			sourceTree = "<group>";
+		};
+		B9900FE0221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9900FE1221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.swift */,
+				B9900FE9221EB40700767360 /* XCTestCase+Expect.swift */,
+				B9900FEB221EB49300767360 /* TestPage.swift */,
+				B9900FE3221EB3AC00767360 /* Info.plist */,
+				B9900FED221EB56A00767360 /* TestVC */,
+			);
+			path = mobile_mentor_ios_code_challengeUITests;
+			sourceTree = "<group>";
+		};
+		B9900FED221EB56A00767360 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				B9900FF0221EB5E400767360 /* SearchController.swift */,
+				B9900FF4221EB61A00767360 /* AlbumController.swift */,
+			);
+			path = TestVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,18 +341,62 @@
 			productReference = 362E80C8221386EE00EEED0D /* mobile_mentor_ios_code_challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B9900FD0221EA26F00767360 /* mobile_mentor_ios_code_challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9900FD8221EA27000767360 /* Build configuration list for PBXNativeTarget "mobile_mentor_ios_code_challengeTests" */;
+			buildPhases = (
+				B9900FCD221EA26F00767360 /* Sources */,
+				B9900FCE221EA26F00767360 /* Frameworks */,
+				B9900FCF221EA26F00767360 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9900FD7221EA27000767360 /* PBXTargetDependency */,
+			);
+			name = mobile_mentor_ios_code_challengeTests;
+			productName = mobile_mentor_ios_code_challengeTests;
+			productReference = B9900FD1221EA26F00767360 /* mobile_mentor_ios_code_challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9900FDE221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9900FE6221EB3AC00767360 /* Build configuration list for PBXNativeTarget "mobile_mentor_ios_code_challengeUITests" */;
+			buildPhases = (
+				B9900FDB221EB3AC00767360 /* Sources */,
+				B9900FDC221EB3AC00767360 /* Frameworks */,
+				B9900FDD221EB3AC00767360 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9900FE5221EB3AC00767360 /* PBXTargetDependency */,
+			);
+			name = mobile_mentor_ios_code_challengeUITests;
+			productName = mobile_mentor_ios_code_challengeUITests;
+			productReference = B9900FDF221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		362E80C0221386EE00EEED0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Elite Endurance Louisville";
 				TargetAttributes = {
 					362E80C7221386EE00EEED0D = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					B9900FD0221EA26F00767360 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 362E80C7221386EE00EEED0D;
+					};
+					B9900FDE221EB3AC00767360 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 362E80C7221386EE00EEED0D;
 					};
 				};
 			};
@@ -289,6 +414,8 @@
 			projectRoot = "";
 			targets = (
 				362E80C7221386EE00EEED0D /* mobile_mentor_ios_code_challenge */,
+				B9900FD0221EA26F00767360 /* mobile_mentor_ios_code_challengeTests */,
+				B9900FDE221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +427,20 @@
 			files = (
 				362E80D6221386F200EEED0D /* LaunchScreen.storyboard in Resources */,
 				362E80D3221386F200EEED0D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9900FCF221EA26F00767360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9900FDD221EB3AC00767360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +522,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9900FCD221EA26F00767360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9900FD4221EA27000767360 /* mobile_mentor_ios_code_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9900FDB221EB3AC00767360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9900FE2221EB3AC00767360 /* mobile_mentor_ios_code_challengeUITests.swift in Sources */,
+				B9900FF1221EB5E400767360 /* SearchController.swift in Sources */,
+				B9900FF5221EB61A00767360 /* AlbumController.swift in Sources */,
+				B9900FEC221EB49300767360 /* TestPage.swift in Sources */,
+				B9900FEA221EB40700767360 /* XCTestCase+Expect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9900FD7221EA27000767360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 362E80C7221386EE00EEED0D /* mobile_mentor_ios_code_challenge */;
+			targetProxy = B9900FD6221EA27000767360 /* PBXContainerItemProxy */;
+		};
+		B9900FE5221EB3AC00767360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 362E80C7221386EE00EEED0D /* mobile_mentor_ios_code_challenge */;
+			targetProxy = B9900FE4221EB3AC00767360 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		362E80D4221386F200EEED0D /* LaunchScreen.storyboard */ = {
@@ -551,6 +725,88 @@
 			};
 			name = Release;
 		};
+		B9900FD9221EA27000767360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3LN6LR5X2;
+				INFOPLIST_FILE = mobile_mentor_ios_code_challengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CSG.mobile-mentor-ios-code-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobile_mentor_ios_code_challenge.app/mobile_mentor_ios_code_challenge";
+			};
+			name = Debug;
+		};
+		B9900FDA221EA27000767360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3LN6LR5X2;
+				INFOPLIST_FILE = mobile_mentor_ios_code_challengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CSG.mobile-mentor-ios-code-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobile_mentor_ios_code_challenge.app/mobile_mentor_ios_code_challenge";
+			};
+			name = Release;
+		};
+		B9900FE7221EB3AC00767360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3LN6LR5X2;
+				INFOPLIST_FILE = mobile_mentor_ios_code_challengeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CSG.mobile-mentor-ios-code-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mobile_mentor_ios_code_challenge;
+			};
+			name = Debug;
+		};
+		B9900FE8221EB3AC00767360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3LN6LR5X2;
+				INFOPLIST_FILE = mobile_mentor_ios_code_challengeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CSG.mobile-mentor-ios-code-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mobile_mentor_ios_code_challenge;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,6 +824,24 @@
 			buildConfigurations = (
 				362E80DB221386F200EEED0D /* Debug */,
 				362E80DC221386F200EEED0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9900FD8221EA27000767360 /* Build configuration list for PBXNativeTarget "mobile_mentor_ios_code_challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9900FD9221EA27000767360 /* Debug */,
+				B9900FDA221EA27000767360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9900FE6221EB3AC00767360 /* Build configuration list for PBXNativeTarget "mobile_mentor_ios_code_challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9900FE7221EB3AC00767360 /* Debug */,
+				B9900FE8221EB3AC00767360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
