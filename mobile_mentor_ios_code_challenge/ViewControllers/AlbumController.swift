@@ -59,7 +59,6 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
                             self.albumView.albumImageView.image = image
                             
                             guard let albumName = SearchResults.searchAlbumResults[0].collectionName else {return
-                                
                             }
                             self.albumView.albumNameLabel.text = albumName
                             self.albumView.artistLabel.text = SearchResults.searchAlbumResults[0].artistName
@@ -93,7 +92,7 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.albumLabel.removeFromSuperview()
         cell.artistLabel.removeFromSuperview()
         
-        cell.trackLabel.text = "   \(SearchResults.searchAlbumResults[indexPath.row].trackName!)"
+        cell.trackLabel.text = "   \(indexPath.row + 1).  \(SearchResults.searchAlbumResults[indexPath.row].trackName!)"
 
         
         return cell
