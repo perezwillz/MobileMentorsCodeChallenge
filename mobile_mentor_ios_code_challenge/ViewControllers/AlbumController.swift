@@ -41,10 +41,21 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
     fileprivate func setupTableView() {
         albumTableView.delegate = self
         albumTableView.dataSource = self
-        albumTableView.rowHeight = 150
+        albumTableView.rowHeight = 75
        albumTableView.register(ResultsTableViewCell.self, forCellReuseIdentifier: "resultsTableViewCell")
         setupView()
     }
+    
+    func loadViewImage(){
+        NetworkManager().getImage(urlString: SearchResults.searchAlbumResults.first!.artworkUrl100!) { (image) in
+        
+                        DispatchQueue.main.async {
+                             //LoadImageView
+                        }
+            }
+    }
+    
+    
     
     fileprivate func setConstraints() {
         albumTableView.translatesAutoresizingMaskIntoConstraints = false
@@ -61,19 +72,12 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ResultsTableViewCell = { return ResultsTableViewCell() }()
         cell.selectionStyle = .none
+        cell.albumImageView.removeFromSuperview()
+        cell.albumLabel.removeFromSuperview()
+        cell.artistLabel.removeFromSuperview()
         
-        cell.albumLabel.font = UIFont(name: Fonts.DemiBold.name(), size: 15)
-        
-        NetworkManager().getImage(urlString: SearchResults.searchAlbumResults[indexPath.row].artworkUrl100!) { (image) in
-            
-            DispatchQueue.main.async {
-                 cell.albumImageView.image = image
-            }
-           
-        }
-        cell.trackLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row].trackName!)"
-        cell.albumLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row].collectionName!)"
-        cell.artistLabel.text = "\(SearchResults.searchAlbumResults[indexPath.row].artistName!)"
+        cell.trackLabel.text = "   \(SearchResults.searchAlbumResults[indexPath.row].trackName!)"
+
         
         return cell
     }

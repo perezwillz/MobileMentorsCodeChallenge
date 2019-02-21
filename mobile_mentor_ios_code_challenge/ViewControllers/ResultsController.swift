@@ -90,9 +90,7 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
             print("This album does not have an album name")
             return
         }
-       
-        print("THIS IS THE ALBUM NAME \(albumName)")
-        
+  
         let trackAlbum = albumName.replacingOccurrences(of: " ", with: "+")
         
         NetworkManager().searchByTerm(urlString: "https://itunes.apple.com/search?term=\(String(describing: trackAlbum))") { (json) in
