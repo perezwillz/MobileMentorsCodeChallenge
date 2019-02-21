@@ -21,11 +21,14 @@ enum SearchType: Int {
 class NetworkManager {
     
     func searchByTerm(urlString: String, completion: @escaping (JSON) -> ()) {
+           print(urlString)
+        guard  let url = URL(string: urlString) else {
+            print("There is something wrong with this album url")
+            return
+        }
         
-        let url = URL(string: urlString)
-        
-        print(url)
-        let request = URLRequest(url: url!)
+     
+        let request = URLRequest(url: url)
         
         URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
             

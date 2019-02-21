@@ -93,7 +93,9 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
        
         print("THIS IS THE ALBUM NAME \(albumName)")
         
-        NetworkManager().searchByTerm(urlString: "https://itunes.apple.com/search?term=\(String(describing: albumName))") { (json) in
+        let trackAlbum = albumName.replacingOccurrences(of: " ", with: "+")
+        
+        NetworkManager().searchByTerm(urlString: "https://itunes.apple.com/search?term=\(String(describing: trackAlbum))") { (json) in
             self.parseJSON(json: json)
         }
     }

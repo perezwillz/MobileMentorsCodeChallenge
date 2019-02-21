@@ -13,4 +13,5 @@ struct SearchResults {
     static var searchAllResults = [ResultsModel]()
     static var searchAlbumResults = [ResultsModel]()
     
+   // func remove
 }
