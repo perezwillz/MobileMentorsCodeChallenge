@@ -33,7 +33,6 @@ class SearchView: UIView {
         backgroundColor = ColorPalette.DarkGray.setHexColor(alpha: 1)
         addSubview(searchTextField)
         addSubview(searchButton)
-        
         setConstraints()
         
     }

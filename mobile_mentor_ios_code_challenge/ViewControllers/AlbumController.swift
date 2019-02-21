@@ -10,6 +10,8 @@ import UIKit
 
 class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+     let albumView: AlbumView = { return AlbumView() }()
+    
     var albumTableView: UITableView = {
         let tableView = UITableView()
         
@@ -18,7 +20,8 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadViewImage()
+        setupView()
         setupTableView()
         
     }
@@ -33,8 +36,9 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
     fileprivate func setupView() {
         
         view.addSubview(albumTableView)
-        
+        view.addSubview(albumView)
         setConstraints()
+       
         title = SearchResults.searchAlbumResults[0].collectionName
     }
     
@@ -43,14 +47,14 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         albumTableView.dataSource = self
         albumTableView.rowHeight = 75
        albumTableView.register(ResultsTableViewCell.self, forCellReuseIdentifier: "resultsTableViewCell")
-        setupView()
+       
     }
     
     func loadViewImage(){
         NetworkManager().getImage(urlString: SearchResults.searchAlbumResults.first!.artworkUrl100!) { (image) in
         
                         DispatchQueue.main.async {
-                             //LoadImageView
+                            self.albumView.albumImageView.image = image
                         }
             }
     }
@@ -59,8 +63,12 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     fileprivate func setConstraints() {
         albumTableView.translatesAutoresizingMaskIntoConstraints = false
+        albumView.translatesAutoresizingMaskIntoConstraints = false
         
-        Constraints().constraintWithTopAndLeadingAnchor(field: albumTableView, width: UIElementSizes.windowWidth, height: UIElementSizes.windowHeight, topAnchor: view.topAnchor, topConstant: UIElementSizes.navigationBarMaxY - 75, leadingAnchor: view.leadingAnchor, leadingConstant: 0)
+            Constraints().constraintWithTopAndCenterXAnchor(field: albumView, width: UIElementSizes.windowWidth, height: 300, topAnchor: view.topAnchor, topConstant: UIElementSizes.navigationBarMaxY - 75, centerXAnchor: view.centerXAnchor, centerXConstant: 0)
+        
+        
+        Constraints().constraintWithTopAndLeadingAnchor(field: albumTableView, width: UIElementSizes.windowWidth, height: UIElementSizes.windowHeight, topAnchor: albumView.bottomAnchor, topConstant: 0, leadingAnchor: view.leadingAnchor, leadingConstant: 0)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

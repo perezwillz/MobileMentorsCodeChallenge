@@ -38,6 +38,7 @@
 		3673F78F22149FD40045435E /* SearchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3673F78E22149FD40045435E /* SearchHistoryViewModel.swift */; };
 		7EB7B8FE221A093600A0AFE1 /* Enumurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB7B8FD221A093600A0AFE1 /* Enumurations.swift */; };
 		7EB7B900221A2B9500A0AFE1 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB7B8FF221A2B9500A0AFE1 /* SearchTableViewCell.swift */; };
+		B9900FCC221E6A1200767360 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9900FCB221E6A1200767360 /* AlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		7EB7B8FD221A093600A0AFE1 /* Enumurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumurations.swift; sourceTree = "<group>"; };
 		7EB7B8FF221A2B9500A0AFE1 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		82276A9ED03023C60BA659B6 /* Pods_mobile_mentor_ios_code_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_mentor_ios_code_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9900FCB221E6A1200767360 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		C22030297DB94B07604D2E34 /* Pods-mobile_mentor_ios_code_challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile_mentor_ios_code_challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile_mentor_ios_code_challenge/Pods-mobile_mentor_ios_code_challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F5C57F35E623F66622826977 /* Pods-mobile_mentor_ios_code_challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile_mentor_ios_code_challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile_mentor_ios_code_challenge/Pods-mobile_mentor_ios_code_challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,8 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				362E811F2213910900EEED0D /* LoginView.swift */,
-				3673F78A221469AA0045435E /* CreateAccountView.swift */,
 				362E81212213911700EEED0D /* SearchView.swift */,
+				B9900FCB221E6A1200767360 /* AlbumView.swift */,
+				3673F78A221469AA0045435E /* CreateAccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				3673F78B221469AA0045435E /* CreateAccountView.swift in Sources */,
 				3673F78F22149FD40045435E /* SearchHistoryViewModel.swift in Sources */,
 				362E811E221390E500EEED0D /* UIColor.swift in Sources */,
+				B9900FCC221E6A1200767360 /* AlbumView.swift in Sources */,
 				362E811622138FC600EEED0D /* CreateUIElements.swift in Sources */,
 				362E81242213915F00EEED0D /* LoginController.swift in Sources */,
 				362E81422213D0D000EEED0D /* CreateAccountController.swift in Sources */,
