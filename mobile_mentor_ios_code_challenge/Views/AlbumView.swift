@@ -17,12 +17,12 @@ class AlbumView: UIView {
         return imageView
     }()
     
-    var trackLabel: UILabel = {
-        return CreateUIElements().createUILabel(text: "", textAlignment: .left, textColor: ColorPalette.MediumLightBlue.setHexColor(alpha: 1), fontName: Fonts.Bold.name(), fontSize: 20, lineBreakMode: .byWordWrapping, backgroundColor: ColorPalette.Black.setHexColor(alpha: 0), borderWidth: 0, borderColor: ColorPalette.Black.setHexColor(alpha: 0))
+    var albumNameLabel: UILabel = {
+        return CreateUIElements().createUILabel(text: " ", textAlignment: .left, textColor: ColorPalette.MediumLightBlue.setHexColor(alpha: 1), fontName: Fonts.Bold.name(), fontSize: 30, lineBreakMode: .byWordWrapping, backgroundColor: ColorPalette.Black.setHexColor(alpha: 0), borderWidth: 0, borderColor: ColorPalette.Black.setHexColor(alpha: 0))
     }()
     
     var artistLabel: UILabel = {
-        return CreateUIElements().createUILabel(text: "", textAlignment: .left, textColor: ColorPalette.BaseBlue.setHexColor(alpha: 1), fontName: Fonts.Regular.name(), fontSize: 15, lineBreakMode: .byWordWrapping, backgroundColor: ColorPalette.Black.setHexColor(alpha: 0), borderWidth: 0, borderColor: ColorPalette.Black.setHexColor(alpha: 0))
+        return CreateUIElements().createUILabel(text: " ", textAlignment: .left, textColor: ColorPalette.White.setHexColor(alpha: 1), fontName: Fonts.Regular.name(), fontSize: 20, lineBreakMode: .byWordWrapping, backgroundColor: ColorPalette.Black.setHexColor(alpha: 0), borderWidth: 0, borderColor: ColorPalette.Black.setHexColor(alpha: 0))
     }()
     
     
@@ -40,13 +40,22 @@ class AlbumView: UIView {
         
         backgroundColor = ColorPalette.DarkGray.setHexColor(alpha: 1)
         addSubview(albumImageView)
+        addSubview(albumNameLabel)
+        addSubview(artistLabel)
         setConstraints()
     }
     
     fileprivate func setConstraints() {
         
         albumImageView.translatesAutoresizingMaskIntoConstraints = false
+        albumNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        artistLabel.translatesAutoresizingMaskIntoConstraints = false
+        
           Constraints().constraintWithTopAndLeadingAnchor(field: albumImageView, width: 185, height: 215, topAnchor: topAnchor, topConstant: 25, leadingAnchor: leadingAnchor, leadingConstant: 25)
+        
+          Constraints().constraintWithTopAndLeadingAnchor(field: albumNameLabel, width: UIElementSizes.labelWidth - 125, height: 30, topAnchor: topAnchor, topConstant: 25, leadingAnchor: albumImageView.trailingAnchor, leadingConstant: 15)
+        
+        Constraints().constraintWithTopAndLeadingAnchor(field: artistLabel, width: UIElementSizes.labelWidth - 125, height: 20, topAnchor: albumNameLabel.bottomAnchor, topConstant: 5, leadingAnchor: albumImageView.trailingAnchor, leadingConstant: 15)
         
 //        Constraints().constraintWithCenterYAndCenterXAnchor(field: albumImageView, width: 250, height: 250, centerYAnchor: centerYAnchor, centerYConstant: 0, centerXAnchor: centerXAnchor, centerXConstant: 0)
     }

@@ -37,6 +37,7 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         view.addSubview(albumTableView)
         view.addSubview(albumView)
+        albumView.albumNameLabel.lineBreakMode = .byClipping
         setConstraints()
        
         title = SearchResults.searchAlbumResults[0].collectionName
@@ -55,6 +56,9 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
                         DispatchQueue.main.async {
                             self.albumView.albumImageView.image = image
+                            self.albumView.albumNameLabel.text = SearchResults.searchAlbumResults[0].collectionName
+                            self.albumView.artistLabel.text = SearchResults.searchAlbumResults[0].artistName
+                            
                         }
             }
     }

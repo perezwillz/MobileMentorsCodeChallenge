@@ -60,6 +60,7 @@ class ResultsTableViewCell: UITableViewCell {
         trackLabel.translatesAutoresizingMaskIntoConstraints = false
         artistLabel.translatesAutoresizingMaskIntoConstraints = false
         albumLabel.translatesAutoresizingMaskIntoConstraints = false
+        
         Constraints().constraintWithTopAndLeadingAnchor(field: albumImageView, width: 100, height: 100, topAnchor: topAnchor, topConstant: 25, leadingAnchor: leadingAnchor, leadingConstant: 25)
         
         Constraints().constraintWithTopAndLeadingAnchor(field: trackLabel, width: UIElementSizes.labelWidth - 125, height: 30, topAnchor: topAnchor, topConstant: 25, leadingAnchor: albumImageView.trailingAnchor, leadingConstant: 15)
